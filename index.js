@@ -10,7 +10,7 @@
 const winstond = require('winstond')
 const config = require('config')
 
-const server = winstond.nssocket.createServer({
+const server = winstond.http.createServer({
   services: ['collect', 'query', 'stream'],
   port: config.winstond.port,
   host: config.winstond.host
