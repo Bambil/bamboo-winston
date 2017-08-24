@@ -18,7 +18,7 @@ const server = winstond.http.createServer({
 
 server.add(winstond.transports.Console, {
   colorize: true,
-  json: false,
+  timestamp: true,
   stringify: true,
   prettyPrint: true
 })
