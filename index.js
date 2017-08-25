@@ -7,16 +7,16 @@
  * | File Name:     index.js
  * +===============================================
  */
-const winstond = require('winstond')
+const happyWinston = require('happy-winston')
 const config = require('config')
 
-const server = winstond.http.createServer({
-  services: ['collect', 'query', 'stream'],
+const server = new happyWinston.Winstond({
+  services: ['collect', 'query'],
   port: config.winstond.port,
   host: config.winstond.host
 })
 
-server.add(winstond.transports.Console, {
+server.add(happyWinston.transports.Console, {
   colorize: true,
   timestamp: true,
   stringify: true,
