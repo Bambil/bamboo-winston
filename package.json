@@ -1,7 +1,7 @@
 {
   "name": "@ibamboo/winston",
   "version": "1.0.0",
-  "description": "",
+  "description": "system logs gatherer based on winstond",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +18,7 @@
   "homepage": "https://github.com/bambil/bamboo-winston#readme",
   "dependencies": {
     "config": "^1.26.1",
-    "winston": "^2.3.1",
-    "winstond": "0.0.2"
+    "happy-winston": "0.0.2"
   },
   "devDependencies": {
     "eslint": "^4.4.1",
